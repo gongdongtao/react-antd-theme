@@ -1,0 +1,73 @@
+@import './login.scss';
+
+body {
+  // overflow: hidden;
+  font-weight: 400;
+  font-size: 12px;
+  font-family: "Lato", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  color: #000;
+}
+
+.trigger {
+  font-size: 18px;
+  line-height: 50px !important;
+  padding: 0 24px;
+  cursor: pointer;
+  transition: color .3s;
+  width: 50px;
+  height: 50px;
+}
+
+.trigger:hover {
+  color: #1890ff;
+}
+
+.logo {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 16px;
+  min-width: 150px;
+}
+.header-right-item {
+  font-size: 16px;
+  color: rgba(0,0,0,0.65);
+  // float: right;
+  padding: 0 12px;
+  transition: 0.2s;
+  cursor: pointer;
+  &:hover {
+    background: #e6e6e6;
+  }
+}
+.header-right-item-dark {
+  color: rgba(255, 255, 255, 0.65);
+  &:hover {
+    background: #000d19;
+  }
+}
+.topNav-menu.ant-menu-horizontal {
+  line-height: 50px;
+  border-bottom: none;
+}
+/*清除浮动代码*/
+.clearfloat:after{
+  display:block;
+  clear:both;
+  content:"";
+  visibility:hidden;
+  height:0;
+}
+.clearfloat{
+  zoom:1;
+}
+.colorBlock {
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 2px;
+  cursor: pointer;
+}

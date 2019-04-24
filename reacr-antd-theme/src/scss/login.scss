@@ -1,0 +1,159 @@
+.login-page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  min-height: 600px;
+  // padding-top: 50px;
+  // padding-bottom: 50px;
+  background-color: #111;
+  background-image: linear-gradient(#064072, #000);
+  background-image: -owg-linear-gradient(#064072, #000);
+  background-image: -o-linear-gradient(#064072, #000);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#064072), to(#000));
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  z-index: 95;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  
+  .login-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+  }
+  
+  .shelfCenter {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    flex: 1;
+    -webkit-box-flex: 1
+  }
+  
+  .login-form {
+    color: #969BA3;
+    
+  }
+  .login-logo {
+    text-align: center;
+    
+    img {
+      width: 200px;
+    }
+  }
+  .login-desc {
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 24px;
+  }
+  
+  .login-content {
+    width: 340px;
+    color: #969BA3;
+    
+    .label {
+      color: #969BA3;
+    }
+    .ant-form-item {
+      margin-bottom: 18px;
+    }
+    .ant-form-item-control {
+      line-height: 32px;
+    }
+    .ant-checkbox-wrapper {
+      color: #969BA3;
+    }
+    .ant-input {
+      border-radius: 0;
+      background-color: rgba(255,255,255,0.1);
+      border-color: rgba(255,255,255,0.14);
+      color: #fff;
+    }
+    .ant-checkbox-inner {
+      background-color: rgba(255,255,255,0.1);
+      border-color: rgba(255,255,255,0.14);
+      width: 18px;
+      height: 18px;
+      &:after {
+        left: 25%;
+      }
+    }
+    .ant-checkbox-checked .ant-checkbox-inner {
+      background-color: #00a0df;
+    }
+    .ant-input-prefix {
+      color: #969BA3;
+    }
+    .login-form-button {
+      width: 100%;
+      letter-spacing: .0714285714em;
+      height: 40px;
+      background-color: #0095d0;
+      color: #fff;
+      border-color: #0099d5;
+      
+      &:hover {
+        background-color: #00abee;
+      }
+      &:active {
+        background-color: #0095d0;
+      }
+    }
+    .register-link {
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      width: 100%;
+      text-align: center;
+      text-transform: uppercase;
+      height: 40px;
+      line-height: 40px;
+      margin-top: 10px;
+      letter-spacing: .0714285714em;
+      
+      &:hover, &:focus {
+        outline: none;
+      }
+    }
+    
+    .login-error {
+      margin-bottom: 10px;
+      .ant-alert {
+        border-radius: 0;
+      }
+      .ant-alert-warning {
+        color: #ffe58f;
+        border: 1px solid #fefcee;
+        // background-color: #ffe58f;
+        background-color: rgba(255,255,255,0.1);
+        // border-color: rgba(255,255,255,0.14);
+        .ant-alert-icon {
+          color: #ffe58f;
+        }
+      }
+    }
+    
+  }
+}
+
+.register-page {
+  min-height: 800px;
+  
+  .has-error .ant-form-explain, .has-error .ant-form-split {
+    color: #ea7b81;
+  }
+  
+  .has-error .ant-input:not([disabled]):hover, .has-error .ant-input:not([disabled]):hover, .has-error .ant-input:focus {
+    border-color: #ea7b81;
+  }
+}
